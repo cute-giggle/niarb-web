@@ -1,10 +1,14 @@
 <script>
 import BrainSurface from "./components/BrainSurface.vue";
+// import BrainNetwork from "./components/BrainNetwork.vue";
+import KnowledgeGraph from "./components/KnowledgeGraph.vue";
 
 export default {
     name: "App",
     components: {
         BrainSurface,
+        // BrainNetwork,
+        KnowledgeGraph,
     },
 };
 </script>
