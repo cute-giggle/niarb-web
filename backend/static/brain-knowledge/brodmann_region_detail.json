@@ -1,0 +1,361 @@
+{
+    "Brodmann.8": {
+        "name": "Brodmann.8",
+        "synonyms": [
+            "Frontal eye field"
+        ],
+        "description": "Brodmann.8 is a region located in the frontal lobe of the brain, specifically in the precentral gyrus. It is responsible for controlling eye movements and visual attention.",
+        "related corpus": " Brodmann.8 is closely related to other regions in the frontal lobe, such as the prefrontal cortex and the supplementary eye field. It also has connections to the parietal lobe and the superior colliculus. Damage to Brodmann.8 can result in deficits in eye movements and visual attention, such as in patients with frontal eye field syndrome. It has also been implicated in disorders such as schizophrenia and attention deficit hyperactivity disorder (ADHD). Brodmann.8 plays a role in visual attention and the ability to shift attention between different stimuli. It is also involved in working memory and decision-making processes. There is limited research on the role of Brodmann.8 in emotions, but it may be involved in regulating emotional responses through its connections to the prefrontal cortex. Brodmann.8 is involved in controlling eye movements and visual attention, which are important for a wide range of behaviors such as reading, driving, and sports. It may also play a role in decision-making and impulse control. There is limited research on the effects of drugs on Brodmann.8 specifically, but drugs that affect dopamine and norepinephrine levels in the brain may impact its function."
+    },
+    "Brodmann.6": {
+        "name": "Brodmann.6",
+        "synonyms": [
+            "BA6",
+            "Precentral gyrus"
+        ],
+        "description": "Brodmann.6 is a region of the frontal lobe of the brain that is located in the precentral gyrus. It is involved in the planning and execution of voluntary movements.",
+        "related corpus": " Brodmann.6 is closely associated with other regions of the motor cortex, including Brodmann.4 and Brodmann.8. It also has connections to the parietal lobe, which is involved in sensory processing and spatial awareness. Damage to Brodmann.6 can result in motor deficits, such as paralysis or weakness. It is also implicated in movement disorders such as Parkinson's disease and Huntington's disease. Brodmann.6 is primarily involved in motor planning and execution, but it may also play a role in higher cognitive functions such as decision-making and working memory.  Brodmann.6 is involved in the control of voluntary movements, including fine motor skills and complex movements such as speech and writing. There are no drugs specifically targeted at Brodmann.6, but medications used to treat movement disorders may affect this region indirectly."
+    },
+    "Brodmann.4": {
+        "name": "Brodmann.4",
+        "synonyms": [
+            "Primary motor cortex",
+            "M1"
+        ],
+        "description": "Brodmann.4, also known as the primary motor cortex or M1, is a region of the brain located in the frontal lobe. It is responsible for the planning, control, and execution of voluntary movements.",
+        "related corpus": " Brodmann.4 is closely connected to other regions of the motor system, including the premotor cortex, supplementary motor area, and basal ganglia. Damage to Brodmann.4 can result in motor deficits, such as paralysis or weakness. It is also implicated in movement disorders such as Parkinson's disease and Huntington's disease. While Brodmann.4 is primarily associated with motor function, it also plays a role in cognitive processes such as attention and decision-making. Brodmann.4 is not directly involved in emotional processing, but it may indirectly influence emotional responses through its connections to other brain regions. Brodmann.4 is involved in a wide range of behaviors related to movement, including walking, reaching, and grasping. There are no drugs specifically targeting Brodmann.4, but medications used to treat movement disorders may indirectly affect its function."
+    },
+    "Brodmann.9": {
+        "name": "Brodmann.9",
+        "synonyms": [
+            "BA9",
+            "Dorsolateral prefrontal cortex"
+        ],
+        "description": "Brodmann.9 is a region of the prefrontal cortex located in the dorsolateral area of the frontal lobe. It is involved in executive functions such as working memory, planning, decision-making, and cognitive flexibility.",
+        "related corpus": " Brodmann.9 is connected to other prefrontal regions such as Brodmann.46, Brodmann.10, and Brodmann.8. It also has connections to the parietal cortex and the basal ganglia. Brodmann.9 dysfunction has been implicated in several psychiatric and neurological disorders such as schizophrenia, depression, bipolar disorder, and Parkinson's disease. Brodmann.9 plays a crucial role in higher cognitive functions such as attention, working memory, and decision-making. It is also involved in language processing and semantic memory. Brodmann.9 has been associated with emotional regulation and the processing of emotional stimuli. It is involved in the modulation of negative emotions such as fear and anxiety. Brodmann.9 is involved in the regulation of goal-directed behavior, planning, and decision-making. It is also implicated in social cognition and empathy. Several drugs have been shown to modulate Brodmann.9 activity, including dopamine agonists, antidepressants, and antipsychotics. Transcranial magnetic stimulation (TMS) has also been used to modulate Brodmann.9 activity in various cognitive and emotional tasks."
+    },
+    "Brodmann.3": {
+        "name": "Brodmann.3",
+        "synonyms": [
+            "BA3"
+        ],
+        "description": "Brodmann area 3 is a region in the parietal lobe of the brain that is involved in somatosensory processing and spatial awareness.",
+        "related corpus": " Brodmann area 1, Brodmann area 2, Brodmann area 5, Brodmann area 7 Somatosensory disorders, Spatial neglect Spatial awareness, Sensory perception  Sensory discrimination, Spatial orientation "
+    },
+    "Brodmann.1": {
+        "name": "Brodmann.1",
+        "synonyms": [
+            "Primary somatosensory cortex",
+            "S1"
+        ],
+        "description": "Brodmann.1 is a region of the brain located in the postcentral gyrus of the parietal lobe. It is responsible for processing somatosensory information from the body, including touch, temperature, and pain.",
+        "related corpus": " Brodmann.1 is closely associated with other regions of the somatosensory cortex, including Brodmann.2 and Brodmann.3. It also has connections to the thalamus, which relays sensory information from the body to the cortex. Damage to Brodmann.1 can result in sensory deficits, such as numbness or loss of sensation in parts of the body. It is also implicated in conditions such as phantom limb syndrome and chronic pain. Brodmann.1 plays a role in body awareness and spatial perception. It is also involved in the integration of sensory information with motor planning, allowing us to perform complex movements and manipulate objects. Brodmann.1 is not directly involved in emotional processing, but it may play a role in the perception of touch and other physical sensations that can elicit emotional responses. Brodmann.1 is involved in a wide range of behaviors related to somatosensation, including touch discrimination, proprioception, and pain perception. It also plays a role in motor planning and execution. There are no drugs specifically targeted at Brodmann.1, but medications that affect sensory processing or pain perception may indirectly impact this region."
+    },
+    "Brodmann.5": {
+        "name": "Brodmann.5",
+        "synonyms": [
+            "BA5",
+            "Brodmann area 5"
+        ],
+        "description": "Brodmann area 5 is a region in the parietal lobe of the brain. It is located in the superior parietal lobule and is involved in somatosensory processing and spatial awareness.",
+        "related corpus": " Brodmann area 5 is connected to other regions in the parietal lobe, such as Brodmann area 7 and the intraparietal sulcus. It also has connections to the primary somatosensory cortex and the premotor cortex.  Brodmann area 5 is involved in spatial cognition and perception. It is also involved in the integration of sensory information from different modalities.  Brodmann area 5 is involved in the planning and execution of movements, as well as the perception of body position and movement. It is also involved in attention and working memory. "
+    },
+    "Brodmann.7": {
+        "name": "Brodmann.7",
+        "synonyms": [
+            "BA7",
+            "parietal cortex"
+        ],
+        "description": "Brodmann.7 is a region of the parietal cortex that is involved in sensory processing, spatial awareness, and attention.",
+        "related corpus": " Brodmann.7 is connected to other regions of the parietal cortex, as well as the frontal cortex and the occipital cortex. It is also involved in the dorsal visual stream, which is responsible for processing visual information related to spatial location and movement. Damage to Brodmann.7 can result in spatial neglect, a condition in which patients are unable to attend to stimuli on one side of their body or in their environment. It has also been implicated in disorders such as autism and schizophrenia. Brodmann.7 is involved in spatial cognition, including the ability to perceive and navigate through space. It is also involved in attention and working memory. Brodmann.7 has been implicated in emotional processing, particularly in the perception of facial expressions and the recognition of emotional states. Brodmann.7 is involved in a range of behaviors related to spatial awareness and attention, including reaching and grasping, visual search, and spatial memory. There is limited research on the effects of drugs on Brodmann.7 specifically, but drugs that affect attention and spatial cognition may have an impact on this region."
+    },
+    "Brodmann.2": {
+        "name": "Brodmann.2",
+        "synonyms": [
+            "Area 2",
+            "BA2"
+        ],
+        "description": "Brodmann area 2 is a region in the parietal lobe of the brain. It is located in the postcentral gyrus, just posterior to the primary somatosensory cortex (Brodmann area 1).",
+        "related corpus": " Brodmann area 2 is closely associated with the primary somatosensory cortex (Brodmann area 1) and the secondary somatosensory cortex (Brodmann area 5). It also has connections to the premotor cortex, the supplementary motor area, and the inferior parietal lobule.  Brodmann area 2 is involved in somatosensory processing, particularly in the perception of touch and proprioception. It is also involved in spatial awareness and body image.  Brodmann area 2 is involved in motor planning and execution, as well as in the integration of sensory information for movement. It is also involved in the perception of pain and the regulation of attention. "
+    },
+    "Brodmann.31": {
+        "name": "Brodmann.31",
+        "synonyms": [
+            "BA31",
+            "Dorsal Posterior Cingulate Cortex",
+            "Precuneus"
+        ],
+        "description": "Brodmann.31 is a region located in the posterior cingulate cortex, specifically in the precuneus. It is involved in various cognitive processes such as self-referential processing, episodic memory retrieval, visuospatial processing, and attentional control.",
+        "related corpus": " Brodmann.31 is functionally connected to other regions in the default mode network, such as the medial prefrontal cortex, posterior inferior parietal lobule, and hippocampus. It also has connections to the dorsal attention network and the salience network. Brodmann.31 has been implicated in various neurological and psychiatric disorders such as Alzheimer's disease, schizophrenia, depression, and anxiety disorders. Brodmann.31 is involved in self-referential processing, episodic memory retrieval, visuospatial processing, and attentional control. Brodmann.31 has been associated with emotional processing, particularly in the context of self-referential emotional stimuli. Brodmann.31 is involved in various behaviors such as self-referential processing, memory retrieval, attentional control, and visuospatial processing. There is limited research on the effects of drugs on Brodmann.31 specifically, but some studies have shown that certain drugs such as ketamine and psilocybin can modulate activity in the default mode network, which includes Brodmann.31."
+    },
+    "Brodmann.40": {
+        "name": "Brodmann.40",
+        "synonyms": [
+            "Angular gyrus"
+        ],
+        "description": "Brodmann.40 is a region in the parietal lobe of the brain, located in the posterior part of the inferior parietal lobule. It is involved in a variety of cognitive processes, including language processing, spatial awareness, and attention.",
+        "related corpus": " Brodmann.40 is connected to several other brain regions, including the superior temporal gyrus, the middle temporal gyrus, and the inferior parietal lobule. It is also part of the default mode network, a group of brain regions that are active when the brain is at rest. Damage to Brodmann.40 can result in a condition known as Gerstmann syndrome, which is characterized by difficulty with writing, difficulty with left-right orientation, difficulty with calculation, and difficulty with finger recognition. Brodmann.40 has also been implicated in several other neurological and psychiatric disorders, including schizophrenia, Alzheimer's disease, and autism spectrum disorder. Brodmann.40 is involved in a variety of cognitive processes, including language processing, spatial awareness, and attention. It has been shown to be particularly important for semantic processing, which involves the comprehension of meaning in language. Brodmann.40 has been implicated in emotional processing, particularly in the processing of negative emotions such as fear and disgust. Brodmann.40 is involved in a variety of behaviors, including language production and comprehension, spatial navigation, and attention. It has also been implicated in social cognition, including the ability to understand the mental states of others. There are no known drugs that specifically target Brodmann.40. However, drugs that affect neurotransmitter systems such as dopamine, serotonin, and acetylcholine have been shown to affect cognitive processes that involve Brodmann.40."
+    },
+    "Brodmann.44": {
+        "name": "Brodmann.44",
+        "synonyms": [
+            "Broca's area",
+            "Left inferior frontal gyrus"
+        ],
+        "description": "Brodmann.44, also known as Broca's area, is a region in the left inferior frontal gyrus of the brain. It is responsible for language production and comprehension, as well as other cognitive functions such as working memory and decision making.",
+        "related corpus": " Brodmann.44 is closely associated with other language-related brain regions such as Wernicke's area and the arcuate fasciculus. It also has connections to the prefrontal cortex, basal ganglia, and thalamus. Damage to Brodmann.44 can result in a language disorder called Broca's aphasia, which affects the ability to produce speech. It has also been implicated in other disorders such as schizophrenia and depression. Brodmann.44 plays a crucial role in language processing, including speech production and comprehension. It is also involved in working memory and decision making. Brodmann.44 has been linked to emotional processing, particularly in the context of language and communication. Brodmann.44 is involved in a wide range of behaviors related to language and communication, including speaking, writing, and reading. It also plays a role in decision making and problem solving. There are no drugs specifically targeted at Brodmann.44, but medications that affect neurotransmitter systems such as dopamine and serotonin may indirectly impact its function."
+    },
+    "Brodmann.45": {
+        "name": "Brodmann.45",
+        "synonyms": [
+            "BA45",
+            "Broca's area"
+        ],
+        "description": "Brodmann.45 is a region in the frontal lobe of the brain that is responsible for language production and comprehension. It is named after the French neurologist Paul Broca, who first identified its importance in language processing.",
+        "related corpus": " Brodmann.44, Brodmann.47, Wernicke's area, angular gyrus Broca's aphasia, expressive aphasia, apraxia of speech language processing, speech production, syntax, semantics none specifically associated speech production, language comprehension none specifically associated"
+    },
+    "Brodmann.23": {
+        "name": "Brodmann.23",
+        "synonyms": [
+            "BA23",
+            "Posterior cingulate cortex"
+        ],
+        "description": "Brodmann.23 is a region of the brain located in the posterior cingulate cortex. It is involved in various cognitive and emotional processes.",
+        "related corpus": " Brodmann.23 is connected to other regions of the default mode network, including the medial prefrontal cortex and the inferior parietal lobule. It also has connections to the hippocampus and amygdala. Brodmann.23 has been implicated in various neurological and psychiatric disorders, including Alzheimer's disease, depression, and schizophrenia. Brodmann.23 is involved in various cognitive processes, including memory retrieval, attention, and self-referential processing. Brodmann.23 is also involved in emotional processing, particularly in the regulation of negative emotions. Brodmann.23 has been associated with various behaviors, including social cognition, empathy, and self-awareness. There are currently no drugs specifically targeting Brodmann.23, but various medications used to treat neurological and psychiatric disorders may indirectly affect this region."
+    },
+    "Brodmann.39": {
+        "name": "Brodmann.39",
+        "synonyms": [
+            "Angular gyrus"
+        ],
+        "description": "Brodmann.39 is a region in the parietal lobe of the brain, located in the posterior part of the inferior parietal lobule. It is involved in a variety of cognitive processes, including language comprehension, spatial awareness, and attention.",
+        "related corpus": " Brodmann.39 is closely associated with other regions in the inferior parietal lobule, including Brodmann.40 and Brodmann.7. It also has connections to the temporal lobe and the occipital lobe.  Damage to Brodmann.39 can result in a condition known as Gerstmann syndrome, which is characterized by difficulty with writing, difficulty with left-right orientation, difficulty with calculation, and difficulty with finger recognition. Brodmann.39 has also been implicated in a number of other neurological and psychiatric disorders, including Alzheimer's disease, schizophrenia, and depression.  Brodmann.39 is involved in a number of cognitive processes, including language comprehension, spatial awareness, and attention. It has been shown to be particularly important for the processing of written language, and damage to this region can result in difficulty with reading and writing.  Brodmann.39 has been implicated in the processing of emotional information, particularly in the context of language comprehension. It has been shown to be involved in the processing of both positive and negative emotional stimuli.  Brodmann.39 is involved in a number of behaviors, including language processing, spatial awareness, and attention. It has also been implicated in the processing of emotional information, particularly in the context of language comprehension.  There is currently no specific drug that targets Brodmann.39. However, drugs that affect the levels of neurotransmitters such as dopamine, serotonin, and norepinephrine may have an impact on the functioning of this region."
+    },
+    "Brodmann.43": {
+        "name": "Brodmann.43",
+        "synonyms": [
+            "Gustatory cortex"
+        ],
+        "description": "Brodmann.43 is a region of the brain responsible for processing taste information. It is located in the insula, a fold of cortex that lies deep within the lateral sulcus of the brain.",
+        "related corpus": " Brodmann.43 is closely associated with other regions of the insula, as well as the primary gustatory cortex in the parietal lobe. It also has connections to the amygdala, hypothalamus, and prefrontal cortex. Damage to Brodmann.43 can result in taste disorders such as ageusia or dysgeusia. It has also been implicated in disorders such as anorexia nervosa and bulimia. Brodmann.43 plays a role in the perception and identification of taste stimuli, as well as the integration of taste information with other sensory modalities such as smell and texture. Brodmann.43 has been implicated in the emotional response to taste stimuli, particularly in the context of food reward and aversion. Brodmann.43 is involved in the regulation of feeding behavior and appetite, as well as the hedonic aspects of food consumption. Certain drugs, such as opioids and cannabinoids, can modulate activity in Brodmann.43 and alter the perception of taste."
+    },
+    "Brodmann.19": {
+        "name": "Brodmann.19",
+        "synonyms": [
+            "V3",
+            "Visual area 3"
+        ],
+        "description": "Brodmann.19 is a region in the occipital lobe of the brain that is responsible for processing visual information from the eyes. It is part of the primary visual cortex and is involved in the perception of color, form, and motion.",
+        "related corpus": " Brodmann.19 is connected to other regions of the visual cortex, including Brodmann.17 and Brodmann.18. It also receives input from the thalamus, which relays visual information from the eyes. Damage to Brodmann.19 can result in visual impairments, such as color blindness or difficulty perceiving motion. It may also be affected in conditions such as migraine or epilepsy. Brodmann.19 plays a crucial role in visual perception and is involved in the processing of visual information. It is also involved in the recognition of objects and faces. Brodmann.19 is not directly involved in emotions, but it may be indirectly affected by emotional states that influence visual perception. Brodmann.19 is involved in a wide range of visual behaviors, including reading, recognizing faces, and navigating through the environment. There are no specific drugs that target Brodmann.19, but drugs that affect visual perception, such as hallucinogens or stimulants, may indirectly affect this region."
+    },
+    "Brodmann.47": {
+        "name": "Brodmann.47",
+        "synonyms": [
+            "BA47",
+            "Pars orbitalis"
+        ],
+        "description": "Brodmann.47 is a region in the prefrontal cortex of the brain, located in the inferior frontal gyrus. It is involved in language processing, decision making, and social cognition.",
+        "related corpus": " Brodmann.47 is connected to other regions in the prefrontal cortex, such as Brodmann.44 and Brodmann.45. It also has connections to the temporal lobe and the limbic system. Brodmann.47 dysfunction has been implicated in various disorders, including schizophrenia, autism, and depression. Brodmann.47 is involved in language processing, semantic memory, and decision making. Brodmann.47 is involved in social cognition, including the ability to understand and interpret the emotions of others. Brodmann.47 is involved in decision making, social behavior, and language production. There is limited research on drugs that specifically target Brodmann.47. However, drugs that affect neurotransmitters such as dopamine and serotonin may indirectly affect this region."
+    },
+    "Brodmann.41": {
+        "name": "Brodmann.41",
+        "synonyms": [
+            "Primary auditory cortex",
+            "A1"
+        ],
+        "description": "Brodmann.41 is a region of the brain located in the temporal lobe that is responsible for processing auditory information. It is the primary auditory cortex and is involved in the perception of sound.",
+        "related corpus": " Brodmann.41 is connected to other regions of the auditory pathway, including the thalamus, inferior colliculus, and superior temporal gyrus. It also has connections to other sensory regions, such as the visual cortex and somatosensory cortex. Damage to Brodmann.41 can result in various auditory processing disorders, such as tinnitus, hyperacusis, and auditory agnosia. It is also implicated in certain neurological disorders, such as schizophrenia and autism spectrum disorder. Brodmann.41 plays a role in auditory perception, including sound localization, pitch discrimination, and speech perception. It is also involved in auditory memory and learning. Brodmann.41 is involved in the processing of emotional sounds, such as laughter and crying. It is also implicated in the perception of music and the emotional response to music. Brodmann.41 is involved in various auditory behaviors, such as speech production and language comprehension. It is also involved in the perception of environmental sounds and the detection of auditory stimuli. Certain drugs, such as benzodiazepines and opioids, can affect auditory processing and may have an impact on Brodmann.41. However, more research is needed to fully understand the effects of drugs on this brain region."
+    },
+    "Brodmann.30": {
+        "name": "Brodmann.30",
+        "synonyms": [
+            "BA30",
+            "Anterior cingulate cortex"
+        ],
+        "description": "Brodmann.30 is a region of the brain located in the anterior cingulate cortex, which is part of the limbic system. It is involved in a variety of cognitive and emotional processes, including attention, decision-making, empathy, and social behavior.",
+        "related corpus": " Brodmann.30 is closely connected to other regions of the limbic system, including the amygdala, hippocampus, and prefrontal cortex. It also has connections to the basal ganglia and thalamus. Brodmann.30 has been implicated in a number of psychiatric and neurological disorders, including depression, anxiety, schizophrenia, and Alzheimer's disease. Brodmann.30 is involved in a variety of cognitive processes, including attention, decision-making, and working memory. Brodmann.30 is involved in the regulation of emotions, including empathy and social behavior. Brodmann.30 is involved in a variety of behaviors, including decision-making, social behavior, and empathy. There are a number of drugs that can affect Brodmann.30, including antidepressants, antipsychotics, and anxiolytics."
+    },
+    "Brodmann.22": {
+        "name": "Brodmann.22",
+        "synonyms": [
+            "Superior temporal gyrus"
+        ],
+        "description": "Brodmann.22 is a region of the brain located in the superior temporal gyrus, which is responsible for processing auditory information and language comprehension. It is divided into two subregions, Brodmann area 22a and Brodmann area 22b.",
+        "related corpus": " Brodmann.22 is connected to other regions of the brain involved in language processing, such as Broca's area and Wernicke's area. It also has connections to the prefrontal cortex, which is involved in executive functions and decision-making. Damage to Brodmann.22 can result in language disorders such as aphasia, as well as auditory processing disorders. It has also been implicated in schizophrenia and autism spectrum disorders. Brodmann.22 is involved in language comprehension and semantic processing. It is also involved in working memory and attention. Brodmann.22 has been implicated in emotional processing, particularly in the processing of emotional prosody in speech. Brodmann.22 is involved in language production and comprehension, as well as auditory processing. It is also involved in working memory and attention. There are no specific drugs that target Brodmann.22, but drugs that affect neurotransmitters such as dopamine and serotonin can have an impact on language processing and emotional regulation."
+    },
+    "Brodmann.42": {
+        "name": "Brodmann.42",
+        "synonyms": [
+            "Auditory Association Cortex",
+            "Wernicke's Area"
+        ],
+        "description": "Brodmann.42 is a region of the brain located in the posterior part of the superior temporal gyrus in the dominant hemisphere. It is involved in language comprehension and processing of auditory information.",
+        "related corpus": " Brodmann.41, Brodmann.22, Brodmann.44, Brodmann.45, Brodmann.46 Wernicke's aphasia, auditory agnosia, schizophrenia, autism spectrum disorder language comprehension, auditory processing, semantic memory, working memory none specifically associated language production, reading, writing, auditory perception none specifically associated"
+    },
+    "Brodmann.21": {
+        "name": "Brodmann.21",
+        "synonyms": [
+            "Auditory cortex, Primary auditory cortex"
+        ],
+        "description": "Brodmann.21 is a region of the cerebral cortex located in the temporal lobe of the brain. It is responsible for processing auditory information and is considered the primary auditory cortex.",
+        "related corpus": " Brodmann.21 is connected to other regions of the auditory pathway, including the thalamus, inferior colliculus, and superior temporal gyrus. It also has connections to other sensory and motor regions of the brain. Damage to Brodmann.21 can result in various auditory processing disorders, including auditory agnosia and cortical deafness. It has also been implicated in tinnitus and schizophrenia. Brodmann.21 plays a role in auditory perception, including sound localization, discrimination, and recognition. It is also involved in language processing, particularly in the comprehension of spoken language. Brodmann.21 has been linked to emotional processing of auditory stimuli, including the perception of emotional tone in speech. Brodmann.21 is involved in a variety of auditory behaviors, including speech perception, music perception, and sound localization. It is also involved in auditory attention and the ability to filter out irrelevant sounds. There are no specific drugs that target Brodmann.21, but drugs that affect neurotransmitters such as dopamine and serotonin can have an impact on auditory processing and perception."
+    },
+    "Brodmann.38": {
+        "name": "Brodmann.38",
+        "synonyms": [
+            "BA38",
+            "Inferior temporal gyrus"
+        ],
+        "description": "Brodmann.38 is a region located in the inferior temporal gyrus of the brain. It is involved in visual processing and recognition of complex visual stimuli such as faces and objects.",
+        "related corpus": " Brodmann.38 is connected to other regions in the visual processing pathway such as the primary visual cortex (Brodmann.17) and the middle temporal gyrus (Brodmann.21). It also has connections to the prefrontal cortex, which is involved in higher-order cognitive processes. Damage to Brodmann.38 can result in visual agnosia, a condition where individuals are unable to recognize objects despite having intact vision. It has also been implicated in disorders such as autism and schizophrenia. Brodmann.38 plays a role in visual cognition, particularly in the recognition of complex visual stimuli such as faces and objects. Brodmann.38 has been implicated in emotional processing, particularly in the recognition of facial expressions. Brodmann.38 is involved in a variety of behaviors related to visual processing, including object recognition, face recognition, and visual memory. There are currently no drugs specifically targeting Brodmann.38, but drugs that affect visual processing and cognition may indirectly impact this region."
+    },
+    "Brodmann.37": {
+        "name": "Brodmann.37",
+        "synonyms": [
+            "BA37",
+            "Inferior temporal gyrus"
+        ],
+        "description": "Brodmann.37 is a region in the inferior temporal gyrus of the brain, located in the occipitotemporal cortex. It is involved in visual perception and recognition of complex visual stimuli, such as faces and objects.",
+        "related corpus": " Brodmann.37 is connected to other regions in the occipitotemporal cortex, including Brodmann.19 and Brodmann.20. It also has connections to the fusiform gyrus and the parahippocampal gyrus.  Damage to Brodmann.37 can result in visual agnosia, a condition in which a person is unable to recognize objects despite having intact vision. It has also been implicated in disorders such as Alzheimer's disease and schizophrenia. Brodmann.37 is involved in visual perception and recognition of complex visual stimuli, such as faces and objects. It is also involved in the processing of visual information related to color and shape. Brodmann.37 has been implicated in the processing of emotional information conveyed by facial expressions. Brodmann.37 is involved in the recognition of faces and objects, which is essential for social interactions and daily activities. It is also involved in the processing of visual information related to color and shape, which is important for tasks such as object recognition and navigation. There are no known drugs that specifically target Brodmann.37. However, drugs that affect visual perception and recognition, such as hallucinogens, can indirectly affect this region."
+    },
+    "Brodmann.20": {
+        "name": "Brodmann.20",
+        "synonyms": [
+            "Temporal pole"
+        ],
+        "description": "Brodmann.20 is a region located in the temporal lobe of the brain, specifically in the anterior portion of the temporal pole. It is involved in various cognitive and emotional processes.",
+        "related corpus": " Brodmann.20 is connected to other regions in the temporal lobe, such as the hippocampus, amygdala, and entorhinal cortex. It also has connections to the prefrontal cortex and the parietal cortex. Brodmann.20 has been implicated in various neurological and psychiatric disorders, including Alzheimer's disease, schizophrenia, and bipolar disorder. Brodmann.20 is involved in various cognitive processes, such as memory, language, and social cognition. It has been shown to be important for semantic processing and the retrieval of autobiographical memories. Brodmann.20 is also involved in emotional processing, particularly in the recognition and regulation of emotions. It has been shown to be important for empathy and theory of mind. Brodmann.20 is involved in various behaviors, such as decision-making, social behavior, and self-awareness. It has been shown to be important for moral reasoning and the ability to understand the perspectives of others. There are currently no drugs specifically targeting Brodmann.20. However, drugs that affect neurotransmitter systems, such as dopamine and serotonin, may indirectly affect the function of this region."
+    },
+    "Brodmann.32": {
+        "name": "Brodmann.32",
+        "synonyms": [
+            "BA32",
+            "anterior cingulate cortex"
+        ],
+        "description": "Brodmann.32 is a region of the brain located in the anterior cingulate cortex. It is involved in a variety of cognitive and emotional processes, including attention, decision-making, and emotion regulation.",
+        "related corpus": " Brodmann.32 is closely connected to other regions of the prefrontal cortex, as well as the amygdala, hippocampus, and thalamus. Brodmann.32 dysfunction has been implicated in a number of psychiatric disorders, including depression, anxiety, and schizophrenia. Brodmann.32 is involved in a range of cognitive processes, including attention, working memory, and decision-making. Brodmann.32 plays a key role in emotion regulation, particularly in the regulation of negative emotions such as fear and anxiety. Brodmann.32 is involved in a range of behaviors, including social behavior, impulse control, and risk-taking. There is evidence to suggest that certain drugs, such as selective serotonin reuptake inhibitors (SSRIs), can modulate activity in Brodmann.32 and improve symptoms of depression and anxiety."
+    },
+    "Brodmann.24": {
+        "name": "Brodmann.24",
+        "synonyms": [
+            "Area 24",
+            "BA24"
+        ],
+        "description": "Brodmann.24 is a region in the prefrontal cortex of the brain, located in the anterior cingulate cortex. It is involved in various cognitive and emotional processes.",
+        "related corpus": " Brodmann.24 is connected to other regions in the prefrontal cortex, such as Brodmann.25 and Brodmann.32. It also has connections to the amygdala, hippocampus, and thalamus. Brodmann.24 has been implicated in various psychiatric disorders, including depression, anxiety, and schizophrenia. Dysfunction in this region has also been associated with chronic pain and addiction. Brodmann.24 is involved in various cognitive processes, including decision-making, attention, and working memory. It is also involved in social cognition and empathy. Brodmann.24 is involved in emotional processing, particularly in the regulation of negative emotions such as fear and anxiety. It is also involved in empathy and social emotions. Brodmann.24 is involved in various behaviors, including decision-making, impulse control, and social behavior. Dysfunction in this region has been associated with impulsive and aggressive behavior. There are no specific drugs that target Brodmann.24, but various medications used to treat psychiatric disorders may affect this region indirectly. For example, antidepressants and antipsychotics have been shown to modulate activity in the anterior cingulate cortex, which includes Brodmann.24."
+    },
+    "Brodmann.10": {
+        "name": "Brodmann.10",
+        "synonyms": [
+            "BA10",
+            "Frontopolar cortex",
+            "Rostral prefrontal cortex"
+        ],
+        "description": "Brodmann.10 is a region of the prefrontal cortex located in the frontopolar area of the brain. It is involved in a variety of cognitive processes, including decision-making, working memory, and attentional control.",
+        "related corpus": " Brodmann.10 is connected to several other brain regions, including the dorsolateral prefrontal cortex, anterior cingulate cortex, and orbitofrontal cortex. It also has connections to the parietal cortex and temporal cortex. Brodmann.10 has been implicated in several neurological and psychiatric disorders, including schizophrenia, bipolar disorder, and depression. Dysfunction in this region has also been associated with executive dysfunction and cognitive decline in aging. Brodmann.10 is involved in a variety of cognitive processes, including decision-making, working memory, and attentional control. It is also thought to play a role in social cognition and theory of mind. Brodmann.10 has been implicated in emotional regulation and processing. It is thought to play a role in the regulation of negative emotions, such as fear and anxiety. Brodmann.10 is involved in a variety of behaviors, including decision-making, planning, and problem-solving. Dysfunction in this region has been associated with impulsivity and poor decision-making. There is limited research on the effects of drugs on Brodmann.10 specifically. However, drugs that affect dopamine and serotonin levels in the brain, such as antidepressants and antipsychotics, may indirectly affect this region."
+    },
+    "Brodmann.25": {
+        "name": "Brodmann.25",
+        "synonyms": [
+            "BA25",
+            "subgenual anterior cingulate cortex"
+        ],
+        "description": "Brodmann.25 is a region of the brain located in the subgenual anterior cingulate cortex. It is involved in regulating emotional responses and has been implicated in depression and anxiety disorders.",
+        "related corpus": " Brodmann.25 is connected to other regions of the limbic system, including the amygdala, hippocampus, and prefrontal cortex. Brodmann.25 has been implicated in depression and anxiety disorders. Brodmann.25 is involved in regulating emotional responses, which can impact cognitive processes such as decision-making and attention. Brodmann.25 is involved in regulating emotional responses, particularly negative emotions such as fear and sadness. Brodmann.25 has been associated with behaviors related to depression and anxiety, such as social withdrawal and avoidance. Some antidepressant medications, such as selective serotonin reuptake inhibitors (SSRIs), have been shown to affect activity in Brodmann.25."
+    },
+    "Brodmann.11": {
+        "name": "Brodmann.11",
+        "synonyms": [
+            "BA11",
+            "Frontal pole"
+        ],
+        "description": "Brodmann area 11 is located in the frontal lobe, specifically in the frontal pole. It is involved in executive functions such as decision making, planning, and working memory.",
+        "related corpus": " Brodmann area 11 is connected to other areas in the prefrontal cortex, such as Brodmann area 10 and 46. It also has connections to the anterior cingulate cortex and the orbitofrontal cortex. Lesions in Brodmann area 11 have been associated with deficits in executive functions, such as in patients with frontotemporal dementia. It has also been implicated in the pathophysiology of depression and bipolar disorder. Brodmann area 11 is involved in higher-order cognitive processes such as decision making, planning, and working memory. Brodmann area 11 has been implicated in the regulation of emotions, particularly in the context of decision making and social cognition. Brodmann area 11 is involved in the regulation of complex behaviors such as social cognition, empathy, and moral reasoning. There is limited research on the effects of drugs on Brodmann area 11 specifically, but drugs that affect the prefrontal cortex as a whole, such as stimulants and antidepressants, may have an impact on its function."
+    },
+    "Brodmann.46": {
+        "name": "Brodmann.46",
+        "synonyms": [
+            "Dorsolateral prefrontal cortex",
+            "DLPFC"
+        ],
+        "description": "Brodmann.46 is a region of the prefrontal cortex located in the dorsolateral area. It is involved in executive functions such as working memory, cognitive flexibility, planning, decision-making, and attention control.",
+        "related corpus": " Brodmann.46 is connected to other prefrontal regions such as the ventrolateral prefrontal cortex, anterior cingulate cortex, and orbitofrontal cortex. It also has connections with the parietal cortex and temporal cortex. Brodmann.46 dysfunction has been implicated in several psychiatric and neurological disorders such as schizophrenia, depression, bipolar disorder, and Alzheimer's disease. Brodmann.46 plays a crucial role in higher cognitive functions such as working memory, attention, planning, and decision-making. Brodmann.46 is involved in regulating emotional responses and has been linked to emotional regulation and empathy. Brodmann.46 is involved in regulating complex behaviors such as social cognition, language processing, and problem-solving. Several drugs have been shown to modulate Brodmann.46 activity, including dopamine agonists, serotonin reuptake inhibitors, and antipsychotic medications."
+    },
+    "Brodmann.17": {
+        "name": "Brodmann.17",
+        "synonyms": [
+            "Primary visual cortex",
+            "V1"
+        ],
+        "description": "Brodmann.17 is a region located in the occipital lobe of the brain and is responsible for processing visual information from the eyes.",
+        "related corpus": " Brodmann.18, Brodmann.19, superior colliculus, lateral geniculate nucleus Visual agnosia, cortical blindness, amblyopia Visual perception, object recognition, spatial awareness Not directly associated with emotions Visual attention, eye movements, visual memory Psychedelics such as LSD and psilocybin can affect activity in Brodmann.17 and alter visual perception."
+    },
+    "Brodmann.18": {
+        "name": "Brodmann.18",
+        "synonyms": [
+            "Visual Association Cortex"
+        ],
+        "description": "Brodmann.18 is a region of the brain located in the occipital lobe, responsible for processing visual information from the primary visual cortex and integrating it with other sensory information.",
+        "related corpus": " Brodmann.18 is closely connected with other visual processing regions such as Brodmann.17 (primary visual cortex), Brodmann.19 (ventral visual stream), and the parietal lobe. It also has connections with the prefrontal cortex, which is involved in higher-order cognitive functions. Damage to Brodmann.18 can result in visual agnosia, a condition where a person is unable to recognize objects despite having intact vision. It is also implicated in visual hallucinations in conditions such as Charles Bonnet syndrome and schizophrenia. Brodmann.18 plays a role in visual perception, attention, and memory. It is also involved in higher-order cognitive functions such as decision-making and problem-solving. Brodmann.18 is not directly involved in emotional processing, but it can indirectly influence emotions through its connections with other brain regions such as the amygdala and prefrontal cortex. Brodmann.18 is involved in a wide range of behaviors related to visual perception, including object recognition, spatial awareness, and motion perception. It is also involved in higher-order behaviors such as decision-making and problem-solving. There are no specific drugs that target Brodmann.18, but drugs that affect visual processing such as hallucinogens and antipsychotics can indirectly affect its function."
+    },
+    "Brodmann.27": {
+        "name": "Brodmann.27",
+        "synonyms": [
+            "Parahippocampal gyrus"
+        ],
+        "description": "Brodmann.27 is a region of the brain located in the medial temporal lobe, adjacent to the hippocampus. It is involved in memory encoding and retrieval, spatial navigation, and perception of spatial relationships.",
+        "related corpus": " Brodmann.27 is closely associated with the hippocampus, entorhinal cortex, and other regions of the medial temporal lobe. It also has connections to the prefrontal cortex, amygdala, and thalamus. Damage to Brodmann.27 can result in memory impairment, spatial disorientation, and difficulty with navigation. It is also implicated in the pathology of Alzheimer's disease and other forms of dementia. Brodmann.27 plays a critical role in memory formation and retrieval, particularly for spatial and contextual information. It is also involved in spatial navigation and perception of spatial relationships. Brodmann.27 is not directly involved in emotional processing, but it is connected to the amygdala, which plays a key role in emotional regulation. Brodmann.27 is involved in a range of behaviors related to memory, spatial navigation, and perception of spatial relationships. Damage to this region can result in deficits in these areas. There are no drugs specifically targeted at Brodmann.27, but drugs that affect memory and cognition, such as cholinesterase inhibitors, may indirectly impact this region."
+    },
+    "Brodmann.36": {
+        "name": "Brodmann.36",
+        "synonyms": [
+            "BA36",
+            "Temporal pole"
+        ],
+        "description": "Brodmann.36 is a region located in the temporal lobe of the brain, specifically in the anterior portion of the temporal pole. It is involved in various cognitive and emotional processes.",
+        "related corpus": " Brodmann.36 is connected to other regions in the temporal lobe, such as the entorhinal cortex, parahippocampal gyrus, and amygdala. It also has connections to the prefrontal cortex and the hippocampus. Brodmann.36 has been implicated in various neurological and psychiatric disorders, including Alzheimer's disease, schizophrenia, and bipolar disorder. Brodmann.36 is involved in various cognitive processes, such as memory retrieval, semantic processing, and social cognition. Brodmann.36 is also involved in emotional processing, particularly in the recognition and regulation of emotions. Brodmann.36 has been associated with various behaviors, such as social behavior, decision-making, and empathy. There is limited research on the effects of drugs on Brodmann.36 specifically, but some studies have suggested that certain medications, such as antipsychotics and antidepressants, may affect the activity of this region."
+    },
+    "Brodmann.35": {
+        "name": "Brodmann.35",
+        "synonyms": [
+            "Area 35",
+            "BA35"
+        ],
+        "description": "Brodmann area 35 is a region in the parahippocampal gyrus of the brain. It is involved in memory encoding and retrieval, spatial navigation, and recognition of familiar objects and scenes.",
+        "related corpus": " Brodmann area 35 is closely associated with other regions in the parahippocampal gyrus, including Brodmann areas 28, 34, and 36. It also has connections to the hippocampus, amygdala, and prefrontal cortex. Damage to Brodmann area 35 can result in memory impairment, particularly in the ability to form new memories. It has been implicated in Alzheimer's disease and other forms of dementia. Brodmann area 35 plays a key role in memory encoding and retrieval, as well as spatial navigation and recognition of familiar objects and scenes. Brodmann area 35 has been implicated in emotional processing, particularly in the recognition of emotional facial expressions. Brodmann area 35 is involved in a range of behaviors, including memory formation and retrieval, spatial navigation, and recognition of familiar objects and scenes. There is limited research on the effects of drugs on Brodmann area 35 specifically, but drugs that affect memory and cognition may have an impact on this region."
+    },
+    "Brodmann.28": {
+        "name": "Brodmann.28",
+        "synonyms": [
+            "Entorhinal cortex"
+        ],
+        "description": "Brodmann.28 is a region of the brain located in the medial temporal lobe. It is involved in memory and spatial navigation.",
+        "related corpus": " Brodmann.28 is closely associated with the hippocampus, parahippocampal gyrus, and other regions of the medial temporal lobe. It also has connections to the prefrontal cortex and other areas involved in executive function. Brodmann.28 is implicated in Alzheimer's disease and other forms of dementia, as well as epilepsy and other neurological disorders. Brodmann.28 plays a key role in memory formation and retrieval, as well as spatial navigation and perception. Brodmann.28 may be involved in emotional processing, particularly in the context of memory and spatial context. Brodmann.28 is involved in a wide range of behaviors, including memory formation and retrieval, spatial navigation, and decision-making. There are no drugs specifically targeting Brodmann.28, but drugs that affect memory and cognition, such as cholinesterase inhibitors, may indirectly affect this region."
+    },
+    "Brodmann.29": {
+        "name": "Brodmann.29",
+        "synonyms": [
+            "Retrosplenial cortex"
+        ],
+        "description": "Brodmann.29 is a region of the cerebral cortex located in the posterior cingulate gyrus. It is involved in spatial navigation, memory, and self-referential processing.",
+        "related corpus": " Brodmann.29 is connected to the hippocampus, parahippocampal gyrus, and prefrontal cortex. It is also part of the default mode network. Lesions in Brodmann.29 have been associated with spatial disorientation and memory deficits in Alzheimer's disease and other dementias. Brodmann.29 is involved in spatial navigation, memory, and self-referential processing. Brodmann.29 has been implicated in emotional processing and regulation. Brodmann.29 is involved in spatial navigation and memory, which are important for many behaviors such as finding one's way in a new environment. There is limited research on drugs that specifically target Brodmann.29, but drugs that affect memory and spatial navigation may indirectly affect this region."
+    },
+    "Brodmann.26": {
+        "name": "Brodmann.26",
+        "synonyms": [
+            "Area 26",
+            "Cingulate cortex, dorsal anterior part"
+        ],
+        "description": "Brodmann.26 is a region of the cingulate cortex located in the dorsal anterior part. It is involved in various cognitive and emotional processes.",
+        "related corpus": " Brodmann.26 is connected to other regions of the cingulate cortex, such as Brodmann.24 and Brodmann.32. It also has connections to the prefrontal cortex and the amygdala. Brodmann.26 has been implicated in various psychiatric disorders, such as depression, anxiety, and schizophrenia. Brodmann.26 is involved in various cognitive processes, such as attention, decision-making, and working memory. Brodmann.26 is involved in the regulation of emotions, particularly in the processing of negative emotions. Brodmann.26 is involved in various behaviors, such as social behavior, empathy, and moral reasoning. There is limited research on the effects of drugs on Brodmann.26 specifically, but some studies have suggested that antidepressants and antipsychotics may modulate activity in this region."
+    },
+    "Brodmann.33": {
+        "name": "Brodmann.33",
+        "synonyms": [
+            "BA33",
+            "Frontal pole"
+        ],
+        "description": "Brodmann.33 is a region located in the frontal lobe of the brain, specifically in the prefrontal cortex. It is involved in various cognitive processes such as decision making, planning, and working memory.",
+        "related corpus": " Brodmann.33 is closely associated with other prefrontal cortex regions such as Brodmann.9 and Brodmann.10. It also has connections with the anterior cingulate cortex and the orbitofrontal cortex. Damage to Brodmann.33 has been linked to deficits in executive function and decision making, which are common symptoms in patients with frontal lobe lesions. It has also been implicated in various psychiatric disorders such as depression and schizophrenia. Brodmann.33 plays a crucial role in higher cognitive processes such as decision making, planning, and working memory. It is also involved in attentional control and cognitive flexibility. Brodmann.33 has been linked to emotional regulation and social cognition. It is involved in the processing of emotional stimuli and the regulation of emotional responses. Brodmann.33 is involved in various behaviors such as decision making, planning, and working memory. It also plays a role in attentional control and cognitive flexibility. There is limited research on the effects of drugs on Brodmann.33 specifically. However, drugs that affect the prefrontal cortex as a whole, such as stimulants and antidepressants, may have an impact on the cognitive processes associated with Brodmann.33."
+    }
+}

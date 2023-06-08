@@ -1,7 +1,3 @@
-<template>
-    <div id="id-knowledge-graph-view" ref="container"></div>
-</template>
-
 <script>
 import * as d3 from 'd3';
 import axios from 'axios';
@@ -210,13 +206,59 @@ function drag(simulation) {
 }
 </script>
 
+<template>
+    <div class="container">
+        <a-row type="flex">
+            <a-col :span="8">
+                <div class="knowledge-graph-board">
+                    <div style="display: flex; justify-content: space-between; width: 100%">
+                        <a-input-search placeholder="Search" enter-button size="large" />
+                        <a-button type="danger" size="large" style="margin-left: 10px;">Reset</a-button>
+                    </div>
+                    <div class="knowledge-graph-info">
+
+                    </div>
+                </div>
+            </a-col>
+            <a-col :span="16" style="padding-left: 10px;">
+                <div id="id-knowledge-graph-view" ref="container"></div>
+            </a-col>
+        </a-row>
+    </div>
+</template>
+
 <style scoped>
+.container {
+    width: 100%;
+    height: 1000px;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.knowledge-graph-board {
+    width: 100%;
+    height: 985px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(220, 240, 220);
+}
+
 #id-knowledge-graph-view {
     width: 100%;
-    height: 100%;
-    min-width: 540px;
-    min-height: 540px;
-    background-color: #000;
+    height: 985px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(55, 49, 53);
 }
 
 svg {

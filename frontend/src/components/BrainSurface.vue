@@ -8,6 +8,10 @@ import { OutlinePass } from 'three/examples/jsm/postprocessing/OutlinePass.js'
 
 import axios from 'axios'
 
+import { Chart, registerables } from 'chart.js';
+
+Chart.register(...registerables);
+
 const scene = new THREE.Scene()
 const viewID = "id-brain-surface-view"
 
@@ -17,14 +21,23 @@ export default {
     data() {
         return {
             colorTable: [],
+
             slcRegionName: "",
+            slcRegionDetail: {},
+            slcRegionDetailBenchmarkIndex: 1,
+
+            meshList: ['pial', 'orig', 'white', 'inflated'],
+            annotationList: ['aparc', 'brodmann', 'shaefer-400-7'],
+
+            meshLoading: false,
+            annotationLoading: false,
+            annotationName: '',
+            chooseAnnotationDisabled: true,
         };
     },
 
     mounted() {
         this.initialize();
-        this.loadMesh('pial');
-        this.loadAnnotation('aparc');
         this.render();
     },
 
@@ -92,8 +105,10 @@ export default {
         },
 
         loadMesh(name) {
+            this.meshLoading = true
             axios.get(`http://localhost:8000/api/brain-surface/`, { params: { type: "mesh", name: name } })
                 .then(response => {
+                    this.meshLoading = false
                     let data = response.data
                     let vertices = new Float32Array(data.vertices)
                     let indices = new Uint32Array(data.indices)
@@ -101,16 +116,21 @@ export default {
                     this.geometry.setIndex(new THREE.BufferAttribute(indices, 1))
                     this.slcGeometry.setIndex(new THREE.BufferAttribute(new Uint32Array(), 1))
                     this.slcRegionName = ''
+                    this.slcRegionDetail = {}
+                    this.chooseAnnotationDisabled = false
                     this.render()
                 })
                 .catch(error => {
+                    this.meshLoading = false
                     console.log(error)
                 })
         },
 
         loadAnnotation(name) {
+            this.annotationLoading = true
             axios.get(`http://localhost:8000/api/brain-surface/`, { params: { type: "annotation", name: name } })
                 .then(response => {
+                    this.annotationLoading = false
                     let data = response.data
                     this.colorTable = data.color_table
                     this.labels = data.labels
@@ -131,16 +151,18 @@ export default {
                     this.material.needsUpdate = true
                     this.slcGeometry.setIndex(new THREE.BufferAttribute(new Uint32Array(), 1))
                     this.slcRegionName = ''
+                    this.slcRegionDetail = {}
+                    this.annotationName = name
                     this.render()
                 })
                 .catch(error => {
+                    this.annotationLoading = false
                     console.log(error)
                 })
         },
 
         createSlcSurface(partId) {
-
-            this.slcRegionName = this.partNames[partId]
+            this.getRegionDetail(this.partNames[partId]);
 
             var partIndices = []
             var indices = this.geometry.index.array
@@ -164,17 +186,47 @@ export default {
         },
 
         intersectObj(event) {
-            this.mousePos.x = (event.clientX - this.renderer.domElement.offsetLeft) / this.renderer.domElement.clientWidth * 2 - 1;
-            this.mousePos.y = -(event.clientY - this.renderer.domElement.offsetTop) / this.renderer.domElement.clientHeight * 2 + 1;
+            var rect = this.renderer.domElement.getBoundingClientRect();
+            this.mousePos.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+            this.mousePos.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
             this.raycaster.setFromCamera(this.mousePos, this.camera);
             var intersects = this.raycaster.intersectObjects(scene.children, true);
             return intersects.length > 0 ? intersects[0] : null;
         },
 
-        onclick(event) {
-            event.preventDefault()
-            if (this.labels === undefined) {
+        getRegionDetail(name) {
+            if (name === '') {
+                this.slcRegionName = ""
+                this.regionDetail = {}
+                console.log("name is empty")
                 return
+            }
+            console.log(name, this.annotationName)
+            axios.get(`http://localhost:8000/api/region-detail/`, { params: { type: this.annotationName, name: name } })
+                .then(response => {
+                    if (response.data.error) {
+                        this.slcRegionName = ""
+                        this.slcRegionDetail = {}
+                        console.log(response.data.error)
+                        return
+                    }
+
+                    this.slcRegionName = name
+                    this.slcRegionDetail = response.data
+                    this.slcRegionDetailBenchmarkIndex = 1
+                    console.log(this.slcRegionDetailBenchmarkSize * 10)
+                    this.onSlcRegionDetailBenchmarkPageChange(1, this.slcRegionDetailBenchmarkSize * 10)
+                })
+                .catch(error => {
+                    console.log(error)
+                    this.slcRegionDetail = {}
+                })
+        },
+
+        onclick(event) {
+            event.preventDefault();
+            if (this.labels === undefined) {
+                return;
             }
             var intersect = this.intersectObj(event);
             if (intersect) {
@@ -183,32 +235,104 @@ export default {
             } else {
                 this.slcGeometry.setIndex(new THREE.BufferAttribute(new Uint32Array(), 1));
                 this.slcRegionName = ""
+                this.slcRegionDetail = {}
             }
-        }
+        },
+
+        onSlcRegionDetailBenchmarkPageChange(page, pageSize) {
+            if (pageSize < 1) {
+                return;
+            }
+
+            let name = Object.keys(this.slcRegionDetail.benchmark)[page - 1];
+            let data = this.slcRegionDetail.benchmark[name];
+
+            const ctx = document.getElementById('id-benchmark-chart').getContext('2d');
+
+            if (window.benchmarkChart) {
+                window.benchmarkChart.destroy();
+            }
+
+            window.benchmarkChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: data.bins,
+                    datasets: [{
+                        label: name,
+                        data: data.hist,
+                        backgroundColor: 'rgba(75, 150, 192, 0.2)',
+                        borderColor: 'rgba(75, 150, 192, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        },
+    },
+
+    computed: {
+        slcRegionDetailBenchmarkSize() {
+            if (this.slcRegionDetail === undefined) {
+                return 0
+            }
+            if (this.slcRegionDetail.benchmark === undefined) {
+                return 0
+            }
+            return Object.keys(this.slcRegionDetail.benchmark).length
+        },
+
+        brainSurfaceViewSpan() {
+            if (this.slcRegionName === '') {
+                return 20
+            }
+            return 10
+        },
+
+        brainSurfaceInfoSpan() {
+            if (this.slcRegionName === '') {
+                return 0
+            }
+            return 10
+        },
     }
 };
 
 </script>
 
 <template>
-    <a-dropdown :trigger="['contextmenu']">
-        <div class="brain-surface-view" id="id-brain-surface-view"></div>
-        <template #overlay>
-            <a-menu>
-                <a-sub-menu key="fsaverage mesh" title="fsaverage mesh">
-                    <a-menu-item key="pial" v-on:click="loadMesh('pial')">pial</a-menu-item>
-                    <a-menu-item key="orig" v-on:click="loadMesh('orig')">orig</a-menu-item>
-                    <a-menu-item key="white" v-on:click="loadMesh('white')">white</a-menu-item>
-                    <a-menu-item key="inflated" v-on:click="loadMesh('inflated')">inflated</a-menu-item>
-                </a-sub-menu>
-                <a-sub-menu key="fsaverage annotation" title="fsaverage annotation">
-                    <a-menu-item key="aparc" v-on:click="loadAnnotation('aparc')">aparc</a-menu-item>
-                    <a-menu-item key="brodmann" v-on:click="loadAnnotation('brodmann')">brodmann</a-menu-item>
-                    <a-menu-item key="shaefer-400-7"
-                        v-on:click="loadAnnotation('shaefer-400-7')">shaefer-400-7</a-menu-item>
-                </a-sub-menu>
-                <a-sub-menu key="view color table" title="view color table">
-                    <div style="max-height: 400px; max-width: 270px; overflow-y: auto; overflow-x: hidden;">
+    <div class="container">
+        <a-row type="flex" justify="space-between">
+            <a-col :span="brainSurfaceViewSpan">
+                <div class="brain-surface-view" id="id-brain-surface-view"></div>
+            </a-col>
+            <a-col :span="4">
+                <div class="brain-surface-board">
+                    <a-dropdown-button :loading="meshLoading">
+                        <template #overlay>
+                            <a-menu>
+                                <a-menu-item v-for="item in meshList" :key="item" v-on:click="loadMesh(item)">{{ item
+                                }}</a-menu-item>
+                            </a-menu>
+                        </template>
+                        Choose fsaverage mesh
+                    </a-dropdown-button>
+                    <a-dropdown-button :loading="annotationLoading" :disabled="chooseAnnotationDisabled">
+                        <template #overlay>
+                            <a-menu>
+                                <a-menu-item v-for="item in annotationList" :key="item" v-on:click="loadAnnotation(item)">{{
+                                    item }}</a-menu-item>
+                            </a-menu>
+                        </template>
+                        Choose fsaverage annotation
+                    </a-dropdown-button>
+                    <div class="color-view">
                         <div v-for="item, index in colorTable" :key=index
                             :style="{ display: 'flex', alignItems: 'center' }">
                             <a-button
@@ -219,17 +343,104 @@ export default {
                             <span style="margin-left: 5px;">{{ item[1] }}</span>
                         </div>
                     </div>
-                </a-sub-menu>
-            </a-menu>
-        </template>
-    </a-dropdown>
+                </div>
+            </a-col>
+            <a-col :span="brainSurfaceInfoSpan">
+                <div class="brain-surface-info">
+                    <a-button style="border-radius: 5px;" type="primary">
+                        View in knowledge graph
+                    </a-button>
+                    <li v-for="(value, key) in slcRegionDetail" :key="key">
+                        <div v-if="key !== 'benchmark'" class="brain-surface-info-item">
+                            <span style="font-weight: bold;">{{ key }}:</span> {{ value }}
+                        </div>
+                    </li>
+                    <div v-show="slcRegionDetailBenchmarkSize != 0" class="brain-surface-info-chart">
+                        <span style="font-weight: bold; width: 100%">related benchmark:</span>
+                        <canvas id="id-benchmark-chart"></canvas>
+                        <a-pagination :total="slcRegionDetailBenchmarkSize * 10"
+                            v-model:current="slcRegionDetailBenchmarkIndex"
+                            @change="onSlcRegionDetailBenchmarkPageChange" size="small" />
+                    </div>
+                </div>
+            </a-col>
+        </a-row>
+    </div>
 </template>
 
 <style scoped>
+.container {
+    width: 100%;
+    height: 700px;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: black;
+}
+
 .brain-surface-view {
     width: 100%;
-    height: 100%;
-    min-width: 400px;
-    min-height: 400px;
+    height: 685px;
+    padding: 10px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.brain-surface-board {
+    width: 100%;
+    height: 685px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: rgb(200, 230, 210);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.color-view {
+    width: 270px;
+    height: 550px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.brain-surface-info {
+    width: 100%;
+    height: 685px;
+    padding: 10px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(200, 210, 230);
+    overflow-y: auto;
+}
+
+.brain-surface-info-item {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(239, 237, 205);
+}
+
+.brain-surface-info-chart {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(239, 237, 205);
 }
 </style>
