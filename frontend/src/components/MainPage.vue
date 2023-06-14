@@ -1,9 +1,9 @@
 <template>
     <div class="main-page">
         <Header />
-        <Home />
-        <BrainSurface />
-        <KnowledgeGraph />
+        <Home @search-graph="searchGraph" />
+        <BrainSurface @search-graph="searchGraph" />
+        <KnowledgeGraph ref="knowledgeGraph" />
         <IndicatorTable />
     </div>
 </template>
@@ -23,6 +23,20 @@ export default {
         BrainSurface,
         KnowledgeGraph,
         IndicatorTable,
+    },
+
+    data() {
+        return {
+
+        };
+    },
+
+    methods: {
+        searchGraph(name) {
+            console.log(name);
+            this.$refs.knowledgeGraph.search(name);
+            document.getElementById('id-knowledge-graph').scrollIntoView();
+        },
     },
 };
 </script>

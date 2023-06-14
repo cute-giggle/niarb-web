@@ -27,7 +27,7 @@ export default {
             slcRegionDetailBenchmarkIndex: 1,
 
             meshList: ['pial', 'orig', 'white', 'inflated'],
-            annotationList: ['aparc', 'brodmann', 'shaefer-400-7'],
+            annotationList: ['lobes', 'aparc', 'brodmann', 'shaefer-400-7'],
 
             meshLoading: false,
             annotationLoading: false,
@@ -275,6 +275,11 @@ export default {
                 }
             });
         },
+
+        onSearchGraph(name) {
+            console.log(name)
+            this.$emit('search-graph', name)
+        }
     },
 
     computed: {
@@ -307,7 +312,7 @@ export default {
 </script>
 
 <template>
-    <div class="container">
+    <div class="container" id="id-brain-surface">
         <a-divider style="height: 1px; background-color: white" />
         <a-row type="flex" justify="space-around">
             <a-col :span="brainSurfaceViewSpan">
@@ -357,7 +362,7 @@ export default {
             <a-col :span="1"></a-col>
             <a-col :span="brainSurfaceInfoSpan">
                 <div class="brain-surface-info">
-                    <a-button style="border-radius: 5px;" type="primary">
+                    <a-button style="border-radius: 5px;" type="primary" @click="onSearchGraph(this.slcRegionDetail.name)">
                         View in knowledge graph
                     </a-button>
                     <li v-for="(value, key) in slcRegionDetail" :key="key">

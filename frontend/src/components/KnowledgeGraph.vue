@@ -253,6 +253,11 @@ export default {
             this.updateData();
         },
 
+        search(name) {
+            this.searchText = name;
+            this.onSearch();
+        },
+
         nodeColor(d) {
             if (this.isCenterNode(d.id)) {
                 var r = (Math.floor(Math.random() * 256) % 128) + 100;
@@ -320,7 +325,7 @@ function drag(simulation) {
 </script>
 
 <template>
-    <div class="container">
+    <div class="container" id="id-knowledge-graph">
         <a-divider style="height: 1px; background-color: white" />
         <a-row type="flex" justify="space-around">
             <a-col :span="8">

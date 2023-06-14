@@ -1,28 +1,7 @@
 <template>
-    <div class="container">
-        <a-row type="flex">
-            <div class="description-viewer">
-                <div class="description-item">
-                    <span style="font-weight: bold;">Description:</span>
-                    This part is the statistics and brief display of the relevant global indicators of structural and
-                    functional images.
-                    More statistics of local indicators can be found in other modules.
-                </div>
-                <div class="description-item">
-                    <span style="font-weight: bold;">For functional images:</span>
-                    Using the brain partition template of Shaefer2018 400regions 7networks,
-                    the correlation network between regions is constructed by using dsi studio tool and HCP1200 data set,
-                    and the topological properties of the correlation network are calculated after binarization.
-                    There are many binarization methods. Here, the method of retaining a fixed proportion of edges is used.
-                </div>
-                <div class="description-item">
-                    <span style="font-weight: bold;">For structural images:</span>
-                    Using FreeSurfer tool and HCP1200 data set,
-                    the chart is obtained by statistical collation of the results of automatic segmentation.
-                </div>
-            </div>
-        </a-row>
-        <a-row type="flex">
+    <div class="container" id="id-indicator-table">
+        <a-divider style="height: 1px; background-color: white" />
+        <a-row type="flex" justify="space-around">
             <a-col :span="6">
                 <a-layout-header class="functional-list-header">
                     Functional global indicators
@@ -45,18 +24,43 @@
                     </a-list>
                 </div>
             </a-col>
-            <a-col :span="18">
+            <a-col :span="1"></a-col>
+            <a-col :span="16">
+                <div class="description-viewer">
+                    <div class="description-item">
+                        <span style="font-weight: bold; color: rgb(180, 240, 100)">Description:</span>
+                        This part is the statistics and brief display of the relevant global indicators of structural
+                        and
+                        functional images.
+                        More statistics of local indicators can be found in other modules.
+                    </div>
+                    <div class="description-item">
+                        <span style="font-weight: bold; color: rgb(180, 240, 100)">For functional images:</span>
+                        Using the brain partition template of Shaefer2018 400regions 7networks,
+                        the correlation network between regions is constructed by using dsi studio tool and HCP1200 data
+                        set,
+                        and the topological properties of the correlation network are calculated after binarization.
+                        There are many binarization methods. Here, the method of retaining a fixed proportion of edges
+                        is used.
+                    </div>
+                    <div class="description-item">
+                        <span style="font-weight: bold; color: rgb(180, 240, 100)">For structural images:</span>
+                        Using FreeSurfer tool and HCP1200 data set,
+                        the chart is obtained by statistical collation of the results of automatic segmentation.
+                    </div>
+                </div>
                 <div class="chart-viewer">
                     <canvas id="id-chart"></canvas>
                 </div>
             </a-col>
+            <a-col :span="1"></a-col>
         </a-row>
     </div>
 </template>
 
 <script>
 import axios from 'axios';
-import { defineComponent, ref } from 'vue';
+import { defineComponent, ref, computed } from 'vue';
 import { Chart, registerables } from 'chart.js';
 
 Chart.register(...registerables);
@@ -126,7 +130,6 @@ export default defineComponent({
 
         getFunctionalIndicators();
         getStructuralIndicators();
-        getData('functional', 'global efficiency');
 
         return {
             functionalIndicators,
@@ -142,15 +145,13 @@ export default defineComponent({
 
 <style scoped>
 .container {
-    padding: 10px;
-    border: 2px solid white;
-    border-radius: 10px;
-    background-color: black;
+    background-image: url('../assets/img/bg-buttom.jpg');
+    padding: 64px;
 }
 
 .functional-list-header {
     text-align: center;
-    background-color: rgb(210, 235, 230);
+    background-color: rgba(180, 240, 240, 0.8);
     border-radius: 10px 10px 0px 0px;
     padding: 0px 10px;
     font-size: 20px;
@@ -162,7 +163,7 @@ export default defineComponent({
 
 .structural-list-header {
     text-align: center;
-    background-color: rgb(210, 235, 230);
+    background-color: rgba(180, 240, 240, 0.8);
     border-radius: 10px 10px 0px 0px;
     padding: 0px 10px;
     font-size: 20px;
@@ -174,15 +175,16 @@ export default defineComponent({
 }
 
 .functional-list {
-    max-height: 260px;
+    max-height: 250px;
     overflow-y: auto;
-    background-color: rgb(240, 240, 250);
+    border: 1px solid white;
+
 }
 
 .structural-list {
-    max-height: 260px;
+    max-height: 450px;
     overflow-y: auto;
-    background-color: rgb(240, 240, 250);
+    border: 1px solid white;
 }
 
 .list-item {
@@ -191,17 +193,15 @@ export default defineComponent({
     font-weight: 400;
     cursor: pointer;
     text-align: center;
+    color: white;
 }
 
 .list-item:hover {
-    background-color: #b7d0f1;
+    background-color: rgb(79, 83, 83);
 }
 
 .chart-viewer {
-    border: 2px solid white;
-    border-radius: 10px;
-    background-color: rgb(230, 235, 235);
-    height: 100%;
+    background-color: black;
     margin-left: 10px;
     display: flex;
     justify-content: center;
@@ -209,10 +209,6 @@ export default defineComponent({
 }
 
 .description-viewer {
-    border: 2px solid white;
-    border-radius: 10px;
-    background-color: rgb(240, 245, 220);
-    max-height: 250px;
     overflow-y: auto;
     width: 100%;
     margin-bottom: 10px;
@@ -224,13 +220,12 @@ export default defineComponent({
 }
 
 .description-item {
-    border: 1px solid white;
-    background-color: rgb(215, 235, 235);
     border-radius: 5px;
     width: 100%;
     font-size: 18px;
     margin-top: 5px;
     padding: 5px;
     font-style: oblique;
+    color: white;
 }
 </style>

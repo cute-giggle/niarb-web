@@ -1,5 +1,5 @@
 <template>
-    <div class="home">
+    <div class="home" id="id-home">
         <a-row type="flex" justify="space-around" style="height: 100%; width: 100%;">
             <a-col :span="12"></a-col>
             <a-col :span="12">
@@ -11,14 +11,14 @@
                         </div>
                     </div>
                     <div class="home-search">
-                        <a-input placeholder="Search for brain-related concepts"
-                            style="width: 600px; height: 50px; border-radius: 10px;" />
+                        <a-input placeholder="Search for brain-related concepts" v-model:value="searchText"
+                            style="width: 600px; height: 50px; border-radius: 10px;" @keyup.enter.native="searchGraph" />
                     </div>
                     <div class="home-demo">
                         <span></span>
-                        <a>Brodmann.1</a>
-                        <a>paracentral</a>
-                        <a>supramarginal</a>
+                        <a @click="() => {this.searchText = 'Brodmann.1'; this.searchGraph(); }">Brodmann.1</a>
+                        <a @click="() => {this.searchText = 'Paracentral'; this.searchGraph(); }">Paracentral</a>
+                        <a @click="() => {this.searchText = 'Supramarginal'; this.searchGraph(); }">Supramarginal</a>
                         <span></span>
                     </div>
                 </div>
@@ -32,7 +32,16 @@
 export default {
     name: "Home",
     methods: {
-
+        searchGraph() {
+            console.log(this.searchText);
+            this.$emit('search-graph', this.searchText);
+            this.searchText = '';
+        },
+    },
+    data() {
+        return {
+            searchText: '',
+        };
     },
 };
 </script>

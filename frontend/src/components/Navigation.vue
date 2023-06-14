@@ -1,7 +1,7 @@
 <template>
-    <a-menu v-model:selectedKeys="current" mode="horizontal" theme="dark" style="background-color: rgba(0, 0, 0, 0.6);">
+    <a-menu mode="horizontal" theme="dark" style="background-color: rgba(0, 0, 0, 0.6);" :selectable="false">
 
-        <a-menu-item key="home">
+        <a-menu-item key="home" @click="scrollIntoView('id-home')">
             <template #icon>
                 <home-outlined />
             </template>
@@ -42,7 +42,7 @@
             <template #title>
                 Viewer
             </template>
-            <a-menu-item key="surface">
+            <a-menu-item key="surface" @click="scrollIntoView('id-brain-surface')">
                 <template #icon>
                     <cloud-outlined />
                 </template>
@@ -54,13 +54,13 @@
                 </template>
                 Brain network
             </a-menu-item>
-            <a-menu-item key="graph">
+            <a-menu-item key="graph" @click="scrollIntoView('id-knowledge-graph')">
                 <template #icon>
                     <bulb-outlined />
                 </template>
                 Knowledge graph
             </a-menu-item>
-            <a-menu-item key="table">
+            <a-menu-item key="table" @click="scrollIntoView('id-indicator-table')">
                 <template #icon>
                     <line-chart-outlined />
                 </template>
@@ -112,9 +112,15 @@ export default defineComponent({
     },
 
     setup() {
-        const current = ref<string[]>(['mail']);
+        const scrollIntoView = (id: string) => {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView();
+            }
+        };
+
         return {
-            current,
+            scrollIntoView,
         };
     },
 

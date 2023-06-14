@@ -22,8 +22,8 @@ def get_brain_surface_data(request):
         data_path = os.path.join(os.path.dirname(__file__), f'../static/brain-surface/mesh/{name}.json')
         return JsonResponse(json.load(open(data_path)))
     else:
-        if name not in ['aparc', 'brodmann', 'shaefer-400-7']:
-            return JsonResponse({'error': 'annotation name must be aparc, brodmann or shaefer-400-7'})
+        if name not in ['lobes', 'aparc', 'brodmann', 'shaefer-400-7']:
+            return JsonResponse({'error': 'annotation name must be aparc, brodmann or shaefer-400-7 or lobes'})
         data_path = os.path.join(os.path.dirname(__file__), f'../static/brain-surface/annotation/{name}.json')
         return JsonResponse(json.load(open(data_path)))
     
@@ -59,15 +59,16 @@ def get_global_benchmark_data(request):
 shaefer_region_detail = json.load(open(os.path.join(os.path.dirname(__file__), f'../static/brain-knowledge/shaefer-400-7_region_detail.json')))
 aparc_region_detail = json.load(open(os.path.join(os.path.dirname(__file__), f'../static/brain-knowledge/aparc_region_detail.json')))
 brodmann_region_detail = json.load(open(os.path.join(os.path.dirname(__file__), f'../static/brain-knowledge/brodmann_region_detail.json')))
+lobes_region_detail = {}
 
 
 def get_region_detail_data(request):
     if request.method != 'GET':
         return JsonResponse({'error': 'GET request required.'})
     type = request.GET.get('type')
-    if type not in ['shaefer-400-7', 'aparc', 'brodmann']:
-        return JsonResponse({'error': 'type must be shaefer-400-7 or aparc or brodmann'})
-    data = shaefer_region_detail if type == 'shaefer-400-7' else (aparc_region_detail if type == 'aparc' else brodmann_region_detail)
+    if type not in ['shaefer-400-7', 'aparc', 'brodmann', 'lobes']:
+        return JsonResponse({'error': 'type must be shaefer-400-7 or aparc or brodmann or lobes'})
+    data = shaefer_region_detail if type == 'shaefer-400-7' else (aparc_region_detail if type == 'aparc' else (brodmann_region_detail if type == 'brodmann' else lobes_region_detail))
     name = request.GET.get('name')
     if name not in data:
         return JsonResponse({'error': 'name not found'})
