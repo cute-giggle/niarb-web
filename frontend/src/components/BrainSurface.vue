@@ -46,7 +46,7 @@ export default {
             let width = document.getElementById(viewID).clientWidth
             let height = document.getElementById(viewID).clientHeight
             this.camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000)
-            this.camera.position.set(0, 0, 1.7)
+            this.camera.position.set(0, 0, 1.8)
 
             this.renderer = new THREE.WebGLRenderer({ antialias: true })
             this.renderer.setSize(width, height)
@@ -290,16 +290,16 @@ export default {
 
         brainSurfaceViewSpan() {
             if (this.slcRegionName === '') {
-                return 20
+                return 18
             }
-            return 10
+            return 11
         },
 
         brainSurfaceInfoSpan() {
             if (this.slcRegionName === '') {
                 return 0
             }
-            return 10
+            return 7
         },
     }
 };
@@ -308,13 +308,22 @@ export default {
 
 <template>
     <div class="container">
-        <a-row type="flex" justify="space-between">
+        <a-divider style="height: 1px; background-color: white" />
+        <a-row type="flex" justify="space-around">
             <a-col :span="brainSurfaceViewSpan">
                 <div class="brain-surface-view" id="id-brain-surface-view"></div>
             </a-col>
+            <a-col :span="1"></a-col>
             <a-col :span="4">
                 <div class="brain-surface-board">
-                    <a-dropdown-button :loading="meshLoading">
+                    <div v-if="colorTable.length == 0">
+                        <img src="../assets/img/surface-logo.png" style="width: 256px;" />
+                        <div class="graph-board-info"
+                            style="text-align: center; font-size: 20px; font-weight: bold; color: white;">
+                            Niarb brain surface viewer
+                        </div>
+                    </div>
+                    <a-dropdown-button :loading="meshLoading"  style="margin-top: 10px;">
                         <template #overlay>
                             <a-menu>
                                 <a-menu-item v-for="item in meshList" :key="item" v-on:click="loadMesh(item)">{{ item
@@ -323,7 +332,7 @@ export default {
                         </template>
                         Choose fsaverage mesh
                     </a-dropdown-button>
-                    <a-dropdown-button :loading="annotationLoading" :disabled="chooseAnnotationDisabled">
+                    <a-dropdown-button :loading="annotationLoading" :disabled="chooseAnnotationDisabled" style="margin-top: 10px;">
                         <template #overlay>
                             <a-menu>
                                 <a-menu-item v-for="item in annotationList" :key="item" v-on:click="loadAnnotation(item)">{{
@@ -332,9 +341,9 @@ export default {
                         </template>
                         Choose fsaverage annotation
                     </a-dropdown-button>
-                    <div class="color-view">
+                    <div v-if="colorTable.length != 0" class="color-view">
                         <div v-for="item, index in colorTable" :key=index
-                            :style="{ display: 'flex', alignItems: 'center' }">
+                            :style="{ display: 'flex', alignItems: 'center', color: 'white' }">
                             <a-button
                                 :style="{ width: '20px', height: '20px', backgroundColor: 'rgb(' + item[0][0] + ',' + item[0][1] + ',' + item[0][2] + ')' }"
                                 v-on:click="createSlcSurface(index)">
@@ -345,6 +354,7 @@ export default {
                     </div>
                 </div>
             </a-col>
+            <a-col :span="1"></a-col>
             <a-col :span="brainSurfaceInfoSpan">
                 <div class="brain-surface-info">
                     <a-button style="border-radius: 5px;" type="primary">
@@ -359,8 +369,8 @@ export default {
                         <span style="font-weight: bold; width: 100%">related benchmark:</span>
                         <canvas id="id-benchmark-chart"></canvas>
                         <a-pagination :total="slcRegionDetailBenchmarkSize * 10"
-                            v-model:current="slcRegionDetailBenchmarkIndex"
-                            @change="onSlcRegionDetailBenchmarkPageChange" size="small" />
+                            v-model:current="slcRegionDetailBenchmarkIndex" @change="onSlcRegionDetailBenchmarkPageChange"
+                            size="small" />
                     </div>
                 </div>
             </a-col>
@@ -370,19 +380,15 @@ export default {
 
 <style scoped>
 .container {
-    width: 100%;
-    height: 700px;
-    padding: 5px;
-    border: 2px solid white;
-    border-radius: 10px;
-    background-color: black;
+    width: auto;
+    height: auto;
+    padding: 40px;
+    background-image: url("../assets/img/bg-buttom.jpg");
 }
 
 .brain-surface-view {
     width: 100%;
-    height: 685px;
-    padding: 10px;
-    border: 2px solid white;
+    height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -391,14 +397,12 @@ export default {
 
 .brain-surface-board {
     width: 100%;
-    height: 685px;
+    height: 800px;
     padding: 10px;
-    border: 2px solid white;
-    background-color: rgb(200, 230, 210);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     align-content: space-around;
     overflow-y: auto;
@@ -406,20 +410,19 @@ export default {
 }
 
 .color-view {
-    width: 270px;
-    height: 550px;
+    width: 260px;
+    height: 650px;
     overflow-y: auto;
     overflow-x: hidden;
+    margin-top: 10px;
 }
 
 .brain-surface-info {
     width: 100%;
-    height: 685px;
-    padding: 10px;
-    border: 2px solid white;
+    height: 800px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(200, 210, 230);
     overflow-y: auto;
 }
 

@@ -3,11 +3,13 @@ import Header from "./components/Header.vue";
 import BrainSurface from "./components/BrainSurface.vue";
 import KnowledgeGraph from "./components/KnowledgeGraph.vue";
 import IndicatorTable from "./components/IndicatorTable.vue";
+import MainPage from "./components/MainPage.vue";
 
 export default {
     name: "App",
     components: {
         Header,
+        MainPage,
         BrainSurface,
         KnowledgeGraph,
         IndicatorTable,
@@ -16,12 +18,19 @@ export default {
 </script>
 
 <template>
-    <div style="width: 100%; height: 100%;">
+    <div class="main-app">
         <!-- <Header /> -->
-        <BrainSurface />
-        <KnowledgeGraph />
+        <MainPage />
+        <!-- <BrainSurface /> -->
+        <!-- <KnowledgeGraph /> -->
         <!-- <IndicatorTable /> -->
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.main-app {
+    width: 100%;
+    height: 100%;
+    padding: auto;
+}
+</style>

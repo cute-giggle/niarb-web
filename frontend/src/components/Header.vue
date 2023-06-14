@@ -1,13 +1,15 @@
 <template>
     <!-- 固定顶部 -->
-    <a-layout-header style="position: fixed; z-index: 1; width: 100%;">
+    <a-layout-header style="position: fixed; z-index: 1; width: 100%; background-color: rgba(0, 0, 0, 0.6);">
         <a-row type="flex" justify="space-between">
 
             <a-col :span="2">
-                <img src="../assets/img/logo.jpg" style="height: 64px; padding: 16px;" />
+                <img src="../assets/img/logo.png" style="height: 64px; padding: 16px 8px;" />
             </a-col>
 
-            <a-col :span="3"></a-col>
+            <a-col :span="3">
+                <img src="../assets/img/logo-text.png" style="height: 64px; padding: 16px 8px;" />
+            </a-col>
 
             <a-col :span="10">
                 <Navigation />

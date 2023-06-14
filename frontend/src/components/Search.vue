@@ -1,6 +1,6 @@
 <template>
     <div style="height: 64px; align-items: center; display: flex;">
-        <a-input-search v-model:value="value" placeholder="Search" @search="onSearch" size="large" />
+        <a-input-search v-model:value="value" placeholder="Search for docs" @search="onSearch" size="large" />
     </div>
 </template>
 

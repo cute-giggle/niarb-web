@@ -6,6 +6,8 @@ import json
 from django.shortcuts import render
 from django.http import JsonResponse
 
+from .search_neo4j import precise_search_simple
+
 
 def get_brain_surface_data(request):
     if request.method != 'GET':
@@ -70,3 +72,19 @@ def get_region_detail_data(request):
     if name not in data:
         return JsonResponse({'error': 'name not found'})
     return JsonResponse(data[name])
+
+
+def search_neo4j(request):
+    if request.method != 'GET':
+        return JsonResponse({'error': 'GET request required.'})
+    type = request.GET.get('type')
+    if type not in ['precise']:
+        return JsonResponse({'error': 'type must be precise'})
+    name = request.GET.get('name')
+    if name is None:
+        return JsonResponse({'error': 'name must be given'})
+    result = precise_search_simple(name)
+    if result is None:
+        return JsonResponse({'error': 'no result'})
+    return JsonResponse(result)
+    

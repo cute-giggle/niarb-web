@@ -1,5 +1,5 @@
 <template>
-    <a-menu v-model:selectedKeys="current" mode="horizontal" theme="dark">
+    <a-menu v-model:selectedKeys="current" mode="horizontal" theme="dark" style="background-color: rgba(0, 0, 0, 0.6);">
 
         <a-menu-item key="home">
             <template #icon>
