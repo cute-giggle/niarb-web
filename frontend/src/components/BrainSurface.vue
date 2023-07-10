@@ -106,7 +106,7 @@ export default {
 
         loadMesh(name) {
             this.meshLoading = true
-            axios.get(`http://localhost:8000/api/brain-surface/`, { params: { type: "mesh", name: name } })
+            axios.get(`/brain-surface/`, { params: { type: "mesh", name: name } })
                 .then(response => {
                     this.meshLoading = false
                     let data = response.data
@@ -128,7 +128,7 @@ export default {
 
         loadAnnotation(name) {
             this.annotationLoading = true
-            axios.get(`http://localhost:8000/api/brain-surface/`, { params: { type: "annotation", name: name } })
+            axios.get(`/brain-surface/`, { params: { type: "annotation", name: name } })
                 .then(response => {
                     this.annotationLoading = false
                     let data = response.data
@@ -202,7 +202,7 @@ export default {
                 return
             }
             console.log(name, this.annotationName)
-            axios.get(`http://localhost:8000/api/region-detail/`, { params: { type: this.annotationName, name: name } })
+            axios.get(`/region-detail/`, { params: { type: this.annotationName, name: name } })
                 .then(response => {
                     if (response.data.error) {
                         this.slcRegionName = ""

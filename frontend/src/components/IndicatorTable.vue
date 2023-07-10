@@ -78,12 +78,12 @@ export default defineComponent({
         const currentData = ref({});
 
         const getFunctionalIndicators = async () => {
-            const response = await axios.get('http://localhost:8000/api/global-indicator-name/', { params: { type: 'functional' } });
+            const response = await axios.get('/global-indicator-name/', { params: { type: 'functional' } });
             functionalIndicators.value = response.data;
         };
 
         const getStructuralIndicators = async () => {
-            const response = await axios.get('http://localhost:8000/api/global-indicator-name/', { params: { type: 'structural' } });
+            const response = await axios.get('/global-indicator-name/', { params: { type: 'structural' } });
             structuralIndicators.value = response.data;
         };
 

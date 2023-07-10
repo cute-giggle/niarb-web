@@ -215,7 +215,7 @@ export default {
         },
 
         getData(params) {
-            axios.get("http://localhost:8000/api/search-neo4j/", { params: params }).then((response) => {
+            axios.get("/search-neo4j/", { params: params }).then((response) => {
                 if (response.data.nodes === undefined) {
                     console.log("No data");
                     return;
