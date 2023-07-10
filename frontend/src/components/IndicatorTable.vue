@@ -118,7 +118,7 @@ export default defineComponent({
         };
 
         const getData = async (type, name) => {
-            const response = await axios.get('http://localhost:8000/api/global-benchmark/', { params: { type: type, name: name } });
+            const response = await axios.get('/global-benchmark/', { params: { type: type, name: name } });
             currentData.value = {
                 type: type,
                 name: name,
