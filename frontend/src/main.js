@@ -6,7 +6,7 @@ import 'ant-design-vue/dist/antd.css';
 
 // 配置后端请求地址
 import axios from 'axios'
-axios.defaults.baseURL = 'http://localhost:8000/api'
+axios.defaults.baseURL = 'http://114.132.158.253:8000/api'
 
 const app = createApp(App)
 app.use(Antd)

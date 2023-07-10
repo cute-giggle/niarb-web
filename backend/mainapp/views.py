@@ -6,7 +6,7 @@ import json
 from django.shortcuts import render
 from django.http import JsonResponse
 
-from .search_neo4j import precise_search_simple
+# from .search_neo4j import precise_search_simple
 
 
 def get_brain_surface_data(request):
@@ -84,7 +84,8 @@ def search_neo4j(request):
     name = request.GET.get('name')
     if name is None:
         return JsonResponse({'error': 'name must be given'})
-    result = precise_search_simple(name)
+    # result = precise_search_simple(name)
+    result = None
     if result is None:
         return JsonResponse({'error': 'no result'})
     return JsonResponse(result)
